@@ -9,8 +9,10 @@ export function ExercisesIndex() {
     axios.get("http://localhost:3000/exercises.json")
     .then((response) => {
       setExercises(response.data);
+      console.log(response.data);
     })
   }
+  
   return (
     <div>
       <button onClick={getExercises}>Get Exercises</button>

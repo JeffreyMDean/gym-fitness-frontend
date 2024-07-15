@@ -1,8 +1,10 @@
+import {LogoutLink} from './LogoutLink'
+
 export function Header() {
   return (
     <header>
       <nav>
-      <a href="exercises-index">Home</a> | <a href="#exercises-index">All exercises</a> | <a href="#exercises-new">New recipe</a>
+      <a href="/">Home</a> | <a href="/signup">Signup</a> | <a href="login">Login</a> <LogoutLink />
       </nav>
     </header>
   )
