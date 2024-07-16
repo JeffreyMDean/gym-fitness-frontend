@@ -23,7 +23,7 @@ export function ExercisesIndex() {
             <h2>{exercise.name}</h2>
             <p>Description: {exercise.description}</p>
             <img src={exercise.image_url} className="exercise-image" />
-            <p>Video: <a href="exercise.video_url">{exercise.video_url}</a></p>
+            <p>Video: <a href={exercise.video_url}>{exercise.video_url}</a></p>
           </div>
         ))}
       </div>

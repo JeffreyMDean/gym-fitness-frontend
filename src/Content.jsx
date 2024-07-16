@@ -5,10 +5,14 @@ import { Routes, Route } from "react-router-dom";
 import { ExercisesIndex } from './ExercisesIndex';
 
 export function Content() {
+  // const [exercises, setExercises] = useState([]);
+  // const [isExercisesShowVisible, setIsExercisesShowVisible] = useState(false);
+  // const [currentExercise, setCurrentExercise] = useState({});
+
   return (
     <main>
       <Routes>
-        <Route path="/" element={<Home />} />
+        {/* <Route path="/" element={<Home />} /> */}
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
         <Route path="/logout" element={<Login />} />
@@ -18,11 +22,3 @@ export function Content() {
   )
 }
 
-function Home() {
-  return (
-    <div>
-      <h1>Home Page</h1> 
-      <ExercisesIndex />
-    </div>
-  );
-}
