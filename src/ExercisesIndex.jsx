@@ -12,6 +12,20 @@ export function ExercisesIndex() {
       console.log(response.data);
     })
   }
+
+  const addExerciseToRoutine = (exerciseId) => {
+    axios.post("http://localhost:3000/routines", {
+      user_id: user.id,
+      exercise_id: exercise.id,
+      reps: 12
+    })
+    .then((response) => {
+    console.log("Exercise added to routine", response.data)
+    })
+    .catch((error) => {
+    console.error("Error adding exercise to the routine", error) 
+   });
+  };
   
   return (
     <div>
@@ -24,6 +38,7 @@ export function ExercisesIndex() {
             <p>Description: {exercise.description}</p>
             <img src={exercise.image_url} className="exercise-image" />
             <p>Video: <a href={exercise.video_url}>{exercise.video_url}</a></p>
+            <button onClick={() => addExerciseToRoutine(exercise.id)}>Add Exercise to Routine</button>
           </div>
         ))}
       </div>
