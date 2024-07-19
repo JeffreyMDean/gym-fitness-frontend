@@ -4,9 +4,8 @@ import axios from "axios"
 export function ExercisesIndex() {
   const [exercises, setExercises] = useState([]);
   const [reps, setReps] = useState([]);
-
+  
   const getExercises = () => {
-    console.log("hello")
     axios.get("http://localhost:3000/exercises.json")
     .then((response) => {
       setExercises(response.data);
@@ -46,7 +45,7 @@ export function ExercisesIndex() {
             <p>Description: {exercise.description}</p>
             <img src={exercise.image_url} className="exercise-image" />
             <p>Video: <a href={exercise.video_url}>{exercise.video_url}</a></p>
-            <input type="text" value={reps[exercise.id || ""]} onChange={(event) => handleChange(exercise.id, event)} />
+            <input type="text" value={reps[exercise.id || ""]} placeholder="Enter reps:" onChange={(event) => handleChange(exercise.id, event)} />
             <button onClick={() => addExerciseToRoutine(exercise.id)}>Add Exercise to Routine</button>
           </div>
         ))}
