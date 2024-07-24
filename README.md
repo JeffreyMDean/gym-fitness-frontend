@@ -18,7 +18,7 @@ The Gym Fitness app is designed to display information about exercises and allow
 <img width="1470" alt="Screenshot 2024-07-19 at 4 04 46 PM" src="https://github.com/user-attachments/assets/20eb4aa0-068b-4445-a140-c7727e6d076b">
 
 ## Project Status   
-In Progress
+In Progress: currently polishing the core features and plan to add additional features as well.
 
 
 
