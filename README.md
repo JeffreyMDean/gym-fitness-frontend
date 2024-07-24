@@ -1,6 +1,7 @@
 # Gym Fitness App
 ## Table of Contents
 * [Description](#Description)
+* [Features](#Features)
 * [Technologies Utilized](#technologies-Utilized)
 * [Illustrations](#Illustrations)
 * [Project Status](#Project-Status)
