@@ -20,6 +20,10 @@ The Gym Fitness app is designed to display information about exercises and allow
 ## Project Status   
 In Progress: currently polishing the core features and plan to add additional features as well.
 
+## Contact
+Jeffrey Dean - https://www.linkedin.com/in/jeffreymdean8/ - jeffrey.michael.dean@gmail.com
+
+Project Link: https://github.com/JeffreyMDean/gym-fitness-frontend
 
 
 
