@@ -8,6 +8,11 @@
 ## Description
 The Gym Fitness app is designed to display information about exercises and allow users to add an exercise to their routine. When the 'Get Exercises' button is clicked (on the /exercises page), a list of exercises are displayed with an accompanying description, image, and video for each exercise. The user now has the benefit of learning about an exercise and referencing the image and video to learn about proper form and some of the nuances to that specific exercise. The user is able to add an exercise to their routine and log the amount of repetitions completed for the exercise. This feature offers a way for users to track progress and expand their exercise repetoire.
 
+## Features
+* Obtain a list of exercises
+* View pictures and videos that provide educational information and demonstrate proper form
+* Ability to enter the number of repetitions completed for a specific exercise and add that exercise to your routine
+
 ## Technologies Utilized
 * Ruby
 * JavaScript
